@@ -137,6 +137,10 @@ body, html {
     border-radius: 16px;
 }
 
+.class-img3 {
+    border-radius: 16px;
+}
+
 .subsection1.bottom {
     flex: 9; 
     display: flex;
@@ -242,7 +246,7 @@ body, html {
 
 .l1{
     color: var(--TEXT, #302825);
-    font-family: "Hyundai Sans Head";
+    
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
@@ -253,7 +257,7 @@ body, html {
 
 .l2{
     color: var(--BLUE, #014FB2);
-    font-family: "Hyundai Sans Head";
+    
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
@@ -293,7 +297,7 @@ body, html {
 }
 .l6{
     color: var(--TEXT, #302825);
-    font-family: "Hyundai Sans Head";
+    
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
@@ -734,7 +738,11 @@ body, html {
         width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
         height: 100%; /* Giữ tỷ lệ khung hình của hình ảnh */
     }
-
+    .class-img3 {
+        border-radius: 4px;
+        max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
+        height: auto; /* Giữ tỷ lệ khung hình của hình ảnh */
+    }
     .mobile {
         height: 5px;
     }
