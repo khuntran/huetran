@@ -1,22 +1,8 @@
-@font-face {
-    font-family: 'MyFont';
-    src: url('./fonts/Inter/Inter_28pt-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'MyFont';
-    src: url('./fonts/Inter/Inter_28pt-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: "MyFont", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .section {
@@ -766,7 +752,11 @@ body, html {
         flex-direction: column; 
     }
 
-    .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8 , .menu-po-check{
+    .l11{
+        font-size: 18px; 
+    }
+
+    .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8 ,.l10, .menu-po-check, .label-b2, .label-b3{
         font-size: 14px; /* Giảm kích thước chữ */
     }
 
@@ -841,7 +831,17 @@ body, html {
         flex-direction: column;
     }
 
+    .div-26-1{
+        height: 4px;
+    }
+
     .div-27{
         height: 18px;
+    }
+    .button1, .button2 {
+        font-size: 14px; /* Kích thước chữ */
+    }   
+    .label-po{
+        font-size: 16px;
     }
 }
