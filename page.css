@@ -770,7 +770,7 @@ body, html {
         height: 100%; /* Giữ tỷ lệ khung hình của hình ảnh */
     }
     .class-img3 {
-        border-radius: 4px;
+        border-radius: 8px;
         max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
         height: auto; /* Giữ tỷ lệ khung hình của hình ảnh */
     }
