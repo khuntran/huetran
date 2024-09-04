@@ -1,8 +1,22 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./fonts/Inter/Inter_28pt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('./fonts/Inter/Inter_28pt-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: "Inter", sans-serif;
+    font-family: "MyFont", sans-serif;
 }
 
 .section {
@@ -179,6 +193,7 @@ body, html {
 
 .label-b1{
     color: #FFF;
+    font-family: "Inter", sans-serif;
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
@@ -234,6 +249,13 @@ body, html {
     flex-direction: row;
 }
 
+.div-1-m{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .div-1-1{
     width: 150px;
 }
@@ -242,25 +264,33 @@ body, html {
     height: 64px;
 }
 
+.div-24{
+    width: 24px;
+}
+
+.div-25{
+    width: 485px;
+}
+
+.div-27{
+    height: 24px;
+}
+
 .l1{
     color: var(--TEXT, #302825);
-    
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
-    line-height: 110%; /* 77px */
-    letter-spacing: -2.1px;
+    line-height: 110%;
     text-transform: uppercase;
 }
 
 .l2{
     color: var(--BLUE, #014FB2);
-    
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
-    letter-spacing: -2.1px;
     text-transform: uppercase;
 }
 
@@ -276,7 +306,6 @@ body, html {
 
 .l4{
     color: var(--TEXT, #302825);
-    ;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -295,12 +324,9 @@ body, html {
 }
 .l6{
     color: var(--TEXT, #302825);
-    
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: 110%; /* 28.6px */
-    letter-spacing: -0.78px;
     text-transform: uppercase;
 }
 
@@ -435,8 +461,6 @@ body, html {
 
 .l11{
     color: #FFF;
-
-    ;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -507,6 +531,14 @@ body, html {
     display: flex;
     flex-direction: column;
 }
+
+.div-5-2-m{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .div-5-2-1{
     height: 286px;
     display: flex;
@@ -561,6 +593,7 @@ body, html {
 
 /* CSS cho các mục trong menu */
 .dropdown-item {
+    margin-bottom: 10px;
     color: white !important; /* Đặt màu chữ thành trắng */
     background: transparent !important; /* Bỏ màu nền của các mục để chữ trắng vẫn rõ ràng */
 }
@@ -670,7 +703,17 @@ body, html {
         margin: 80px 20px; /* Giảm margin cho màn hình nhỏ */
     }
 
-    .div-4-1, .div-4-2 {
+    .div-4-1 {
+        flex-direction: column; /* Chuyển sang bố cục cột */
+        width: 100%; /* Đặt chiều rộng 100% để phù hợp với màn hình nhỏ */
+    }
+
+    .div-1 {
+        flex-direction: column; /* Chuyển sang bố cục cột */
+        width: 100%; /* Đặt chiều rộng 100% để phù hợp với màn hình nhỏ */
+    }
+
+    .div-4-2 {
         flex-direction: column; /* Chuyển sang bố cục cột */
         width: 100%; /* Đặt chiều rộng 100% để phù hợp với màn hình nhỏ */
     }
@@ -724,7 +767,7 @@ body, html {
     }
 
     .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8 , .menu-po-check{
-        font-size: 18px; /* Giảm kích thước chữ */
+        font-size: 14px; /* Giảm kích thước chữ */
     }
 
     .class-img {
@@ -755,5 +798,50 @@ body, html {
     .div-po-p-b3-n{
         padding-top: 50px;
         padding-left: 20px;
+    }
+    .dropdown-item {
+        margin-top: 40px;
+        margin-bottom: 32px;
+        margin-left: 32px;
+        margin-right: 40px;
+    }
+
+    .div-1-2{
+        height: 12px;
+    }
+
+    .div-2-1{
+        height: 12px;
+    }
+
+    .div-2-4{
+        height: 24px;
+    }
+
+    .div-24{
+        display: 18px;
+    }
+
+    .div-4-1-1-1{
+        justify-content: space-between; 
+    }
+
+    .div-25{
+        display: none;
+    }
+
+    .div-5-2-m{
+        width: 50%;
+    }
+
+    .div-26{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .div-27{
+        height: 18px;
     }
 }
